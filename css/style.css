@@ -1,0 +1,26 @@
+@import url(cabeca.css);
+@import url(rodape.css);
+@import url(meio.css);
+@import url(planos.css);
+@import url(maps.css);
+@import url(sobrenos.css);
+@import url(perfis.css);
+@import url(tablet.css);
+body {
+	margin: 0;
+	padding: 0;
+    overflow-x: hidden;
+}    
+
+html{
+    width: 100% !important;
+
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}

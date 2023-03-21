@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Climate+Crisis&family=Labrada:ital,wght@0,400;0,600;1,100&family=Nunito+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Climate+Crisis&family=Josefin+Sans:ital,wght@1,700&family=Labrada:ital,wght@0,400;0,600;1,100&family=Nunito+Sans:wght@600&display=swap');
+.corpo{
+animation: fundocora1 4s linear 1s infinite alternate;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  --transition: 0.7s;
+  padding: 0;
+  margin: 0;
+  color: rgb(95, 91, 91);
+}
+
+.bodya {
+   
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(80, 223, 248));
+  display: flex;
+  align-items: center;
+}
+/*Banda de las cajitas*/
+.cajaDeperfiles {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/*Cores de fundo*/
+.contenedor {
+  position: relative;
+  background-color: rgb(185, 230, 248);
+  min-width: 230px;
+  min-height: 230px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.474);
+  transition: var(--transition);
+}
+/* tamanho do quadrado */
+.contenedor:hover {
+  /* mexe o texto */
+  min-height: 480px;
+  min-width: 450px;
+}
+::after.contenedorSuperior {
+  height: 100px;
+  transition: var(--transition);
+}
+/* tamanho que cresce pra cima */
+.contenedor:hover .contenedorSuperior {
+  height: 250px;
+  transition: var(--transition);
+}
+/*configura a imagem*/
+.imgBox {
+  position: absolute;
+  /* direciona a imagem */
+  right: 50%;
+  top: -50px;
+  transform: translateX(50%);
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px rgba(40, 49, 49, 0.79);
+  background-size: cover;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  width: 80%;
+  height: 80%;
+  transition: var(--transition);
+  overflow: hidden;
+}
+/* imagem dentro do circulo */
+.imgBox img {
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  right: 50%;
+  transform: translateX(50%);
+  background-size: cover;
+}
+.contenedor:hover .imgBox {
+  border-radius: 25%;
+  width: 190px;
+  height: 190px;
+}
+/*parte com as informações de cada perfil antes de passar o mause*/
+.cajaInfo {
+  position: absolute;
+  top: 160px;
+  width: 100%;
+  height: 25%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden; /*prueba*/
+  transition: var(--transition);
+}
+/* posição do texto na parte de dentro */
+
+
+/* espaçamento entre elementos, botao desce com o height */
+.info {
+  position: relative;
+  height: 350px;
+  /* aparece o texto */
+  width: 80%; 
+}
+
+.info h2 {
+  font-size: 1.4em;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+/* texto embaixo do titulo */
+.info .Texdelgado {
+  color: rgba(0, 0, 0, 0.403);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 0.5em;
+}
+.contenedor .cajaInfo button {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 7.5%;
+  border: none;
+  background-color: transparent;
+}
+/* configuraçõess do botao */
+.cajaInfo button a {
+  color: white;
+  background-color: rgb(0, 166, 207);
+ 
+  border-radius: 10px;
+  text-decoration: none;
+  text-shadow: 2px 1px 3px rgb(255, 255, 255);
+}
+.cajaInfo button:hover a {
+  background-color: rgb(7, 151, 187);
+  padding: 0.5em 1em;
+  color: rgb(0, 0, 0);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.202);
+}
+.contenedor .Data {
+  
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 50px;
+  font-weight: 100;
+ 
+}
+/* numeros no texto */
+.Data .Texdelgado {
+  font-size: 50px;
+}
+
+/* texto dentro da animação*/
+.tapadera {
+  
+  position: absolute;
+  top: 55px;
+  transition: 0.8s;
+}
+
+
+/*  partes principais*/
+.contenedor:hover .tapadera {
+  
+  height: 80%;
+  transition: 4.8s;
+}
+
+
+
+
+/* testando cores prox aula, tem so css*/
+
+/* animação para webkit */
+@-webkit-keyframes fundocora1 {
+  0%   {background: #5cafe7;}
+  25%  {background: #4191e1;}
+  50%  {background: #4672a5;}
+  100% {background: #4176e1;}
+}
+
+/* animação padrão */
+@keyframes fundocorA {
+  0%   {background: #4141e1;}
+  25%  {background: #4191e1;}
+  50%  {background: #414ee1;}
+  100% {background: #4176e1;}
+}
+
+/* executa a chamada da animação no body */

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Climate+Crisis&family=Josefin+Sans:ital,wght@1,700&family=Labrada:ital,wght@0,400;0,600;1,100&family=Nunito+Sans:wght@600&display=swap');
+
+
+.tablet-body {
+  animation: fundocora1 4s linear 1s infinite alternate;
+  line-height: 1.6;
+  min-height: 100vh;
+  width: 100%;
+  
+}
+
+.tablet-body h1, .tablet-body p{
+  font-family: 'Josefin Sans', sans-serif;
+
+  color: white !important;
+}
+
+.tablet-body h1{
+font-size: 50px !important;
+}
+
+.tablet-body p{
+  font-size: 25px !important;
+}
+
+.tablet-body section {
+  max-width: 1650px;
+}
+
+.tablet-body section > div {
+  padding: 15px;
+}
+
+.tablet-body section > div:first-of-type {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+  .tablet-body {
+    padding: 50px;
+    display: grid;
+    place-content: center;
+  }
+
+  .tablet-body section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+}
+
+
+.tablet-body h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #222;
+}
+
+.tablet-body p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #555;
+  width: min(65ch, 100%);
+}
+
+.tablet__screen{
+    height: 89%;
+    width: 84%;
+  }
+
+.tablet {
+  display: flex;
+  margin: 0 auto;
+  background: #0c0c0c;
+  border-radius: 37px;
+  border: 2px solid #3a3a3a;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 
+    1px 7px 19px #00000061, 
+    1px 14px 38px #00000080,
+    inset 0 0 4px rgba(255, 255, 255, 0.58);
+  overflow: hidden;
+}
+  .tablet {
+    height: 573px;
+    width: 734px;
+    user-select: none;
+  }
+      .tablet__screen {
+        height: 89%;
+        width: 84%;
+      }
+
+      .tablet__home {
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+      }
+
+      .tablet__camera {
+        top: 50%;
+        right: 27px;
+        transform: translateY(-50%);
+      }
+
+      .tablet_screenContainer:before {
+        width: 120%;
+        top: 22%;
+        left: 0;
+        background: linear-gradient(180deg, transparent, #9a9a9a0f 100%);
+      }
+    
+
+      .tablet__screen {
+        background-color: #1b1b1b;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    
+    
+      }
+
+  
+        .tablet::before {
+          display: block;
+          height: 25%;
+          width: 120%;
+          content: "";
+          position: absolute;
+          top: 20%;
+          background: linear-gradient(180deg, transparent, #ffffff38 100%);
+          transform: rotate(12deg);
+          filter: blur(1px);
+        }
+
+
+  .tablet__camera {
+    height: 8px;
+    width: 8px;
+    background: linear-gradient(270deg, #4a4a4a, transparent);
+    border-radius: 50%;
+    position: absolute;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .tablet_Eye {
+      height: 4px;
+      width: 4px;
+      border-radius: 50%;
+      background: #0045ad;
+    }
+
+
+  .tablet__home {
+    height: 24px;
+    width: 24px;
+    background: linear-gradient(90deg, #5656564f, #0c0c0c);
+    border-radius: 50%;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+    .tablet__homeSquare {
+      height: 12px;
+      width: 12px;
+      border-radius: 3px;
+      border: 1px solid #4c4c4c;
+    }
+  

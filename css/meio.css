@@ -1,0 +1,135 @@
+/* imagem do fundo no começo */
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@400;600&display=swap');
+
+.fundo{
+width: 100%;
+height: 180px;
+background-repeat: no-repeat;
+}
+
+.fundo-bg
+{
+    width: 100%;
+    height: 100%;
+    background-color: #87CEEB;
+    background-repeat: no-repeat;
+}
+
+.container-negocios {
+    /* background-color: #51A7FA; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 100px;
+    min-height: 100%;
+  }
+
+  .container-negocios p{
+    max-width: 600px !important;
+    font-size: 18px;
+    font-family: 'Labrada', serif;
+    font-size: 32px;
+  }
+
+  .container-negocios h1{
+    font-family: 'Labrada', serif;
+    font-size: 50px;
+  }
+
+  .slide{
+    
+    background-color: #004578;
+  }
+
+  p{
+    /* background-color: rgb(231, 231, 231);
+    border: 15px solid rgb(214, 214, 214); */
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.titulo{
+  /* border-bottom: 6px solid WHITE; */
+  color: aliceblue;
+}
+
+
+.container-animation {
+	background: linear-gradient(-45deg, #79aef3, #766ab8, #0d88da, #25a12b);
+	background-size: 400% 400%;
+	animation: gradient 6s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* parte dos testes */
+
+.h11::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.h11:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.h11::before {
+  content: " ";
+ 
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(201, 62%, 62%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.h11 {
+  position: relative;
+  font-size: 5rem;
+}
+
+.html1 {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.body1 {
+  min-block-size: 10%;
+  min-inline-size: 10%;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+@media (orientation: landscape) {
+  .body2 {
+    grid-auto-flow: column;
+  }
+}
+
+
+/* VIDEO */
+.video-sobre{
+  display: flex;
+  justify-content: center;
+  background-color: #0F92D9;
+}

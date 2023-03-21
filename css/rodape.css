@@ -1,0 +1,23 @@
+
+/* posicionando os icones */
+.icones{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 15px;
+    margin-top: 60px;
+
+}
+/* movimento e tamanho dos icones, padding é o espaço que ocupa */
+.icones li img{
+    transition: 0.3s;
+    width: 60px !important;
+    padding: 15px;
+}
+
+
+.icones li img:hover{
+    width: 80px !important;
+    border-radius: 10px;
+}
+

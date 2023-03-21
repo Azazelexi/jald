@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .background {
+    padding: 0 25px 25px;
+    position: relative;
+    width: 100%;
+  }
+  
+
+  
+  @media (min-width: 900px) {
+    .background {
+      padding: 0 0 25px;
+    }
+  }
+  
+
+
+  .pricing-table {
+    display: flex;
+  }
+  
+  @media (min-width: 900px) {
+    .pricing-table {
+      flex-direction: row;
+    }
+  }
+  
+  .pricing-table * {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .pricing-plan {
+    padding: 20px;
+  }
+  
+
+  
+  @media (min-width: 900px) {
+    .pricing-plan {
+      border-bottom: none;
+      border-right: 1px solid #e1f1ff;
+      flex-basis: 100%;
+      padding: 25px 50px;
+    }
+  
+    .pricing-plan:last-child {
+      border-right: none;
+    }
+  }
+  
+  .pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+  
+  .pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .pricing-features {
+    color: #016FF9;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 50px 0 25px;
+  }
+  
+  .pricing-features-item {
+    border-top: 1px solid #e1f1ff;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 15px 0;
+  }
+  
+  .pricing-features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+  }
+  
+  .pricing-price {
+    color: #757373;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .pricing-button {
+    border: 0px solid #48aaff;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 150ms ease-in-out;
+    background-color: #48aaff;
+    
+  }
+  
+  .pricing-button:hover,
+  .pricing-button:focus {
+    background-color: #98cfff;
+    text-decoration: none;
+    color: black
+  }
+    
+  /* fundo */
+
+  .planos{
+    background-color: #71afe5;
+    padding: 50px;
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
